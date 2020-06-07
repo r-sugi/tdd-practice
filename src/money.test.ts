@@ -12,3 +12,9 @@ Deno.test("testMultiplication", () => {
   product = five.times(3)
   assertEquals(15, product.amount);
 });
+
+Deno.test("testEquality", () => {
+  const dollor = new Dollor(5)
+  assertEquals(dollor.equals(new Dollor(5)), true)
+  assertEquals(dollor.equals(new Dollor(6)), false)
+})
