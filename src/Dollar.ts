@@ -1,6 +1,6 @@
 export class Dollor {
   constructor(
-    public readonly amount: number,
+    private readonly amount: number,
   ) {}
 
   times(multiplier: number) {
