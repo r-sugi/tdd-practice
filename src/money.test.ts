@@ -18,4 +18,6 @@ Deno.test("testEquality", () => {
 
   assertEquals(new Franc(5).equals(new Franc(5)), true)
   assertEquals(new Franc(5).equals(new Franc(6)), false)
+
+  assertEquals(new Franc(5).equals(new Dollor(5)), false)
 })
