@@ -7,7 +7,7 @@ export class Dollor extends Money {
     super()
   }
 
-  times(multiplier: number) {
+  times(multiplier: number): Money {
     return new Dollor(this.amount * multiplier);
   }
 }
