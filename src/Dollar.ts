@@ -1,13 +1,13 @@
-export class Dollor {
+import { Money } from "./Money.ts";
+
+export class Dollor extends Money {
   constructor(
-    private readonly amount: number,
-  ) {}
+    public amount: number
+  ) {
+    super()
+  }
 
   times(multiplier: number) {
     return new Dollor(this.amount * multiplier);
-  }
-  equals(object: Object): boolean {
-    const dollor = object as Dollor
-    return this.amount === dollor.amount
   }
 }

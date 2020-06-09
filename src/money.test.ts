@@ -15,4 +15,7 @@ Deno.test("testEquality", () => {
   const dollor = new Dollor(5)
   assertEquals(dollor.equals(new Dollor(5)), true)
   assertEquals(dollor.equals(new Dollor(6)), false)
+
+  assertEquals(new Franc(5).equals(new Franc(5)), true)
+  assertEquals(new Franc(5).equals(new Franc(6)), false)
 })
