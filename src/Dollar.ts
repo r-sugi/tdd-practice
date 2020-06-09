@@ -1,6 +1,6 @@
 import { Money } from "./Money.ts";
 
-export class Dollor extends Money {
+export class Dollar extends Money {
   constructor(
     public amount: number
   ) {
@@ -8,6 +8,6 @@ export class Dollor extends Money {
   }
 
   times(multiplier: number): Money {
-    return new Dollor(this.amount * multiplier);
+    return new Dollar(this.amount * multiplier);
   }
 }
