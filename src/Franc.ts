@@ -1,12 +1,12 @@
 import { Money } from "./Money.ts";
 export class Franc extends Money{
   constructor(
-    public amount: number
+    amount: number,
+    currency: string
   ) {
-    super()
-  }
-
-  times(multiplier: number): Money {
-    return new Franc(this.amount * multiplier);
+    super(
+      amount,
+      currency
+    )
   }
 }
